@@ -1,0 +1,100 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/watch/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Задаёт ширину по ширине устройства -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-teal">
+    <div class="bg-primary">
+        <div class="container">
+            <div class="row">
+
+                <!--upload clock (Task1 HomeWork7)-->
+                <div class="col-12 col-sm-4">
+                    <div id="watch" class="mt-2">
+                        <H3>
+                            <span id="hours"></span>
+                            <span id="minutes"></span>
+                            <span id="seconds"></span>
+                        </H3>
+                    </div>
+                </div>
+
+                <!--upload NEW YEAR CNT (Task4 HomeWork7)-->
+                <div class=" col-12 col-sm-6">
+                    <div id="newYear" class="mt-1">
+                        <h4>
+                            <span class="badge badge-danger">До Нового Года осталось:
+                                <span id="daysNY"></span>
+                                <span id="hoursNY"></span>
+                                <span id="minutesNY"></span>
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2">
+
+    </div>
+
+    <!--three btn (NOT FOR HOMEWORK)-->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-4 col-lg-2">
+                <button type="button" class="btn btn-success btn-block shadow" id="addBtn">
+                    Add person
+                </button>
+            </div>
+            <div class="col-4  col-lg-2">
+                <button type="button" class="btn btn-info btn-block shadow" id="editBtn">
+                    Edit profile
+                </button>
+            </div>
+            <div class="col-4 col-lg-2">
+                <button type="button" class="btn btn-danger btn-block shadow" id="delBtn">
+                    Cross out
+                </button>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-4 offset-lg-2 mb-2">
+                <form class="form-inline m-1">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Task2 HomeWork7-->
+    <div class="container mt-3">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" width="80px">Фото</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Фамилия</th>
+                    <th scope="col">Дата Рождения</th>
+                    <th scope="col">Возраст</th>
+                    <th scope="col">Должность</th>
+                    <th scope="col">Удаленная работа</th>
+                    <th scope="col">Адрес проживания</th>
+                </tr>
+            </thead>
+            <tbody id="tBodyMain">                
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="js/watch/script.js"></script>
+    <script src="js/newYear/script.js"></script>
+    <script src="js/UserFunc/script.js"></script>
+</body>
+
+</html>

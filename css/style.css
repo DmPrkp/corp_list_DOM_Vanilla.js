@@ -1,0 +1,27 @@
+.bg-teal {
+    background-color: teal;
+}
+
+.form-check-tb {
+    display: flex;
+    justify-content: center;
+}
+
+.table th, .table td {
+    margin: 0px !important;
+    padding: 5px !important;
+    vertical-align: middle !important;
+    text-align: center !important;    
+}
+
+.imgFrame {
+    width: 65px;
+    height: 75px;
+    border: solid 1px;
+    background-color: white !important;
+    border-radius: 3px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
