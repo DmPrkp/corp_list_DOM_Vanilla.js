@@ -29,16 +29,6 @@ setInterval(function () {
 	hoursPlace.innerHTML = hours;
 	minutesPlace.innerHTML = minutes;
 	secondsPlace.innerHTML = seconds;
-
-	//can't define values of color by DOM
-
-	/*let div = document.createElement('div');
-	let span  = document.createElement('span');
-	div.style.color = "orange";
-	div.appendChild(hoursPlaceNY);
-	minutesPlace.style.color = "green";
-	//seconds.style.color = "blue";
-	//minutesPlace.classList.add("mr-5");*/
 }, 1000);
 
 

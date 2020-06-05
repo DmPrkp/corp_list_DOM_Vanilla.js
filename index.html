@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-teal">
+    <script src="js/UserFunc/sortLetter.js"></script>
     <div class="bg-primary">
         <div class="container">
             <div class="row">
@@ -73,28 +74,26 @@
 
     <!--Task2 HomeWork7-->
     <div class="container mt-3">
-        <table class="table table-hover table-bordered" >
+        <table class="table table-hover table-bordered">
             <thead>
                 <tr>
                     <th scope="col" width="80px">Фото</th>
-                    <th scope="col" role="button" onclick="sortLetter(User)">Имя</th>
-                    <th scope="col">Фамилия</th>
-                    <th scope="col">Дата Рождения</th>
-                    <th scope="col">Возраст</th>
+                    <th scope="col" role="button" onclick="myUtils.sortName(user)">Имя</th>
+                    <th scope="col" role="button" onclick="">Фамилия</th>
+                    <th scope="col" >Дата Рождения</th>
+                    <th scope="col" role="button" onclick="myUtils.sortAge(user)">Возраст</th>
                     <th scope="col">Должность</th>
                     <th scope="col">Удаленная работа</th>
                     <th scope="col">Адрес проживания</th>
                 </tr>
             </thead>
-            <tbody id="tBodyMain">                
+            <tbody id="tBodyMain">
             </tbody>
         </table>
     </div>
-    
 
     <script src="js/watch/script.js"></script>
     <script src="js/newYear/script.js"></script>
     <script src="js/UserFunc/script.js"></script>
 </body>
-
 </html>

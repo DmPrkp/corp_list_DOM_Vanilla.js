@@ -1,8 +1,6 @@
-
 let hoursPlaceNY = document.getElementById("hoursNY");
 let minutesPlaceNY = document.getElementById("minutesNY");
 let daysPlaceNY = document.getElementById("daysNY");
-
 
 function timetoNY() {
     let setWatch = new Date();
@@ -16,8 +14,7 @@ function timetoNY() {
     let arrMin = ["минута", "митнуты", "минут"];
     let lastWordDay = '';
     let lastWordHour = '';
-    let lastWordMin = '';
-
+    let lastWordMin = '';        
 
 
     if (+setWatch < 86400000) {
@@ -38,9 +35,7 @@ function timetoNY() {
     } else {
         lastWordDay = lastWorld(days, arrDay, lastWordDay);
     }
-    days = days + " " + lastWordDay;
-
-
+    days = days + " " + lastWordDay;       
 
 
     if (+setWatch < 3600000) {
@@ -61,9 +56,7 @@ function timetoNY() {
     } else {
         lastWordHour = lastWorld(hours, arrHour, lastWordHour);
     }
-    hours = hours + " " + lastWordHour;
-
-
+    hours = hours + " " + lastWordHour;       
 
 
     if (+setWatch < 60000) {
@@ -74,8 +67,7 @@ function timetoNY() {
         minutes = Math.floor(+setWatch / 60000)
     } else if (setWatch < 3600000) {
         minutes = Math.floor(setWatch / 60000)
-    };
-
+    };       
 
     if (minutes > 4 && minutes < 21) {
         lastWordMin = arrMin[2];
@@ -88,6 +80,7 @@ function timetoNY() {
     daysPlaceNY.innerHTML = days;
     hoursPlaceNY.innerHTML = hours;
     minutesPlaceNY.innerHTML = minutes;
+
 
     function lastWorld(prop, arr, answer) {
         if (prop >= 1) {
@@ -102,4 +95,4 @@ function timetoNY() {
     }
 }
 
-setInterval(timetoNY, 1000); 
+setInterval(timetoNY(), 1000); 
